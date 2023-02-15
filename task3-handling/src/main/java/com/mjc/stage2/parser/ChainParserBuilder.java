@@ -18,7 +18,7 @@ public class ChainParserBuilder {
         int i=0;
         while (i < parsers.size()){
             if (parsers.get(i) != null){
-                parsers.get(i).setNextParser(parsers.get(++i));
+                parsers.get(i).setNextParser(parsers.get(i++));
             }else{
                 return parsers.get(i);
             }
