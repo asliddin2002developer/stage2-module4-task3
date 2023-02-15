@@ -11,7 +11,6 @@ public class TextComponent extends AbstractTextComponent {
         super(componentType);
     }
 
-    // Write your code here!
     @Override
     public String operation(){
         StringBuilder builder = new StringBuilder();
@@ -19,23 +18,24 @@ public class TextComponent extends AbstractTextComponent {
         for (AbstractTextComponent abstractTextComponent : componentList){
             builder.append(abstractTextComponent.operation());
         }
-
         return builder.toString();
     }
 
     @Override
     public void add(AbstractTextComponent textComponent){
         componentList.add(textComponent);
+        this.size++;
     }
 
     @Override
     public void remove(AbstractTextComponent textComponent){
         componentList.remove(textComponent);
+        this.size--;
     }
 
     @Override
     public int getSize(){
-        return componentList.size();
+        return this.size;
     }
 
 

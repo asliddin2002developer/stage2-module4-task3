@@ -17,6 +17,4 @@ public class LexemeParser extends AbstractTextParser {
         }
     }
 
-    // Write your code here!
-
 }
