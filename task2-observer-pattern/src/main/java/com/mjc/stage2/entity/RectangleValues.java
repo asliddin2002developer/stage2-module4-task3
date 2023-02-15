@@ -15,6 +15,7 @@ public class RectangleValues {
 
     public void setSquare(double square) {
         this.square = square;
+
     }
 
     public double getPerimeter() {
