@@ -11,6 +11,7 @@ public class RectangleEvent extends EventObject {
         super(source);
     }
 
+
     @Override
     public Rectangle getSource() {
         return (Rectangle) super.getSource();
