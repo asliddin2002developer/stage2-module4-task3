@@ -9,6 +9,7 @@ public class TextComponent extends AbstractTextComponent {
 
     public TextComponent(TextComponentType componentType) {
         super(componentType);
+        this.size = 0;
     }
 
     @Override
